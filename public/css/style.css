@@ -151,6 +151,43 @@ header table form input[type="text"]::-webkit-input-placeholder{
 }
 
 /**
+ * Modal folder CSS
+ */
+
+ #app #folder .mui--text-headline, .titleE1 {
+     color: whitesmoke;
+     height: 27px;
+     padding-top: 4px;
+     padding-left: 10px;
+     background: #343C4C;
+     font-size: 14px;
+ }
+
+#app #folder .mui--text-headline, .title, .desc {
+    height: 30px;
+    width: 200px;
+    background: #343C4C;
+    border: 0px;
+    padding-left: 10px;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+#app #folder .mui--text-headline, .title {
+    margin-top: 60px;
+}
+
+#app #folder .mui--text-headline, .desc {
+    margin-top: 10px;
+}
+
+#app #folder .mui--text-headline, .submit {
+    margin-top: 10px;
+    width: 211px;
+    font-size: 12px;
+}
+
+/**
  * Snippet CSS
  */
 
@@ -233,6 +270,48 @@ header table form input[type="text"]::-webkit-input-placeholder{
 }
 
 /**
+ * Modal snippet CSS
+ */
+
+#app #snippet .mui--text-headline, .titleE2 {
+    color: whitesmoke;
+    height: 27px;
+    padding-top: 4px;
+    padding-left: 10px;
+    background: #343C4C;
+    font-size: 14px;
+}
+
+#app #snippet .mui--text-headline, .titles, .descs, .typeL, .tag {
+    height: 30px;
+    width: 200px;
+    background: #343C4C;
+    border: 0px;
+    padding-left: 10px;
+    color: whitesmoke;
+    font-size: 12px;
+}
+
+#app #snippet .mui--text-headline, .titles {
+    margin-top: 22px;
+}
+
+#app #snippet .mui--text-headline, .descs, .typeL, .tag{
+    margin-top: 10px;
+}
+
+#app #snippet .mui--text-headline, .typeL{
+    width: 211px;
+    border-radius: 1px;
+}
+
+#app #snippet .mui--text-headline, .submit {
+    margin-top: 10px;
+    width: 211px;
+    font-size: 12px;
+}
+
+/**
  * Content CSS
  */
 
@@ -245,21 +324,25 @@ header table form input[type="text"]::-webkit-input-placeholder{
 }
 
 #app #content .easy1{
-    margin-top: 10px;
+    margin-top: -8px;
     Box-sizing: Border-box;
     height: 100%;
 }
 
 #app #content .easy2{
     Box-sizing: Border-box;
-    margin-top: 10px;
+    margin-top: -8px;
     height: 100%;
     display: none;
 }
 
 #app #content .fa-ellipsis-h{
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 15px;
+    width: 30px;
+    height: 12px;
+    background: #3A465B;
+    border-radius: 20%;
 }
 
 

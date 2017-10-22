@@ -8,6 +8,9 @@ $( document ).ready(function() {
         $('.easy1').slideToggle();
         $('.easy2').slideToggle();
     });
+
+
+
 });
 
 

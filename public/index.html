@@ -22,6 +22,65 @@
     <script src="js/mui.min.js" type="text/javascript"></script>
     <script src="js/myscript.js" type="text/javascript"></script>
 
+    <script>
+        function activateModalFolder() {
+            // modal folder
+            var $modalEl = $('<div/>');
+            // set style
+            $modalEl.css({
+                width: 400,
+                height: 300,
+                margin: '100px auto',
+                backgroundColor: '#263043'
+            });
+            // content modal folder
+            var $titleE1 = $('<h4 class="titleE1">Untitle folder</h4>');
+            var $formEl = $('<form class="mui--text-center formEl">' +
+                    '<input type="text" class="title" placeholder="Untitle folder">' +
+                    '<br>' +
+                    '<input type="text" class="desc" placeholder="Description">' +
+                    '<br>' +
+                    '<button type="submit" value="Save" class="mui-btn mui-btn--primary submit">Save</button>' +
+                    '</form>');
+            $modalEl.append($titleE1);
+            $modalEl.append($formEl);
+            // show modal
+            mui.overlay('on', $modalEl.get(0));
+        }
+        function activateModalSnippet() {
+            // modal snippet
+            var $modalE2 = $('<div/>');
+            // set style
+            $modalE2.css({
+                width: 400,
+                height: 300,
+                margin: '100px auto',
+                backgroundColor: '#263043'
+            });
+            // content modal snippet
+            var $titleE2 = $('<h4 class="titleE2">Untitle snippet (name folder)</h4>');
+            var $formE2 = $('<form class="mui--text-center formE2">' +
+                    '<input type="text" class="titles" placeholder="Untitle snippet">' +
+                    '<br>' +
+                    '<input type="text" class="descs" placeholder="Description">' +
+                    '<br>' +
+                    '<input type="text" class="tag" placeholder="Tag">' +
+                    '<br>' +
+                    '<select id="select" class="typeL">' +
+                        '<option value="valeur1">Plain text</option>' +
+                        '<option value="valeur2" selected>JS</option>' +
+                        '<option value="valeur3">CSS</option>' +
+                    '</select>' +
+                    '<br>' +
+                    '<button type="submit" value="Save" class="mui-btn mui-btn--primary submit">Save</button>' +
+                    '</form>');
+            $modalE2.append($titleE2);
+            $modalE2.append($formE2);
+            // show modal
+            mui.overlay('on', $modalE2.get(0));
+        }
+    </script>
+
 </head>
 <body>
 <header class="mui-appbar mui--z1">
@@ -75,26 +134,26 @@
         <div class="mui-row">
             <div class="mui-col-md-3" id="folder">
                 <div id="header" class="mui-row">
-                    <button class="mui-btn mui-btn--small">F</button>
+                    <button class="mui-btn mui-btn--small" onclick="activateModalFolder()"><strong>+</strong></button>
                     <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                 </div>
                 <div id="fo-folder" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/folder.png" alt="image folder" class="image"></a>
+                        <a href="#" onclick="activateModalFolder()"><img src="images/folder.png" alt="image folder" class="image"></a>
                     </div>
                     <h5>Default</h5>
                     <p>folder for snippet</p>
                 </div>
                 <div id="fo-folder" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/folder.png" alt="image folder" class="image"></a>
+                        <a href="#" onclick="activateModalFolder()"><img src="images/folder.png" alt="image folder" class="image"></a>
                     </div>
                     <h5>Default</h5>
                     <p>folder for snippet</p>
                 </div>
                 <div id="fo-folder" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/folder.png" alt="image folder" class="image"></a>
+                        <a href="#" onclick="activateModalFolder()"><img src="images/folder.png" alt="image folder" class="image"></a>
                     </div>
                     <h5>Default</h5>
                     <p>folder for snippet</p>
@@ -102,12 +161,12 @@
             </div>
             <div class="mui-col-md-3" id="snippet">
                 <div id="header" class="mui-row">
-                    <button class="mui-btn mui-btn--small">S</button>
+                    <button class="mui-btn mui-btn--small" onclick="activateModalSnippet()"><strong>+</strong></button>
                     <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()" ><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -115,7 +174,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -123,7 +182,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -131,7 +190,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()" ><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -139,7 +198,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -147,7 +206,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -155,7 +214,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
@@ -163,7 +222,7 @@
                 </div>
                 <div id="sn-snippet" class="mui-row">
                     <div>
-                        <a href="#"><img src="images/snippet.png" alt="image snippet" class="image"></a>
+                        <a href="#" onclick="activateModalSnippet()"><img src="images/snippet.png" alt="image snippet" class="image"></a>
                     </div>
                     <h5>Name snippet</h5>
                     <p>Description</p>
