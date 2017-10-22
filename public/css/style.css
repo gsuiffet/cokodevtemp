@@ -88,7 +88,7 @@ header table form input[type="text"]::-webkit-input-placeholder{
 #app #folder, #snippet{
     border: solid rgba(218, 218, 218, 0.1);
     border-width: 1px 1px 0px 0px;
-    height: 600px;
+    height: 733px;
     overflow: scroll;
 }
 
@@ -318,7 +318,7 @@ header table form input[type="text"]::-webkit-input-placeholder{
 #app #content{
     border: solid rgba(218, 218, 218, 0.1);
     border-width: 1px 0px 0px 0px;
-    height: 600px;
+    height: 733px;
     background: #212733;
     color: whitesmoke;
 }
@@ -352,10 +352,12 @@ header table form input[type="text"]::-webkit-input-placeholder{
 
 footer {
     box-sizing: border-box;
-    height: 100px;
-    background-color: #eee;
-    border-top: 1px solid #e0e0e0;
-    padding-top: 35px;
+    padding-top: 10px;
+}
+
+footer p, a {
+    color: #cfd7d8;
+    font-size: 12px;
 }
 
 @font-face {
