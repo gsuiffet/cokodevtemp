@@ -19,7 +19,6 @@ button {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-
 /**
  * Header CSS
  */
@@ -344,7 +343,6 @@ header table form input[type="text"]::-webkit-input-placeholder{
     background: #3A465B;
     border-radius: 20%;
 }
-
 
 /**
  * Footer CSS
